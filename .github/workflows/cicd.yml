@@ -51,19 +51,4 @@ jobs:
           docker build -t ${{ secrets.DOCKER_USERNAME }}/fastapi-transformer-app:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/fastapi-transformer-app:latest
 
-deploy:
-  runs-on: ubuntu-latest
-  needs: docker-build
-
-  steps:
-    - name: Install Heroku CLI
-      run: curl https://cli-assets.heroku.com/install.sh | sh
-
-    - name: Log in to Heroku Container Registry
-      run: heroku container:login
-
-    - name: Push Docker container to Heroku
-      run: |
-        heroku container:push web --app my-fastapi-transformer-app
-        heroku container:release web --app sentimental-analysis-fastapi
 

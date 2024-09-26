@@ -26,6 +26,9 @@ At its core, this API utilizes a Transformer model specifically designed to accu
 
 
 ## Explore the API
+
+Hope the below still works when you are hitting, lmao :)
+
 To explore the API and try out predictions, visit the following deployed URL:
 https://sa-cicd.onrender.com/predict
 

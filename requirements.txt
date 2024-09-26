@@ -1,2 +1,6 @@
 Flask
+fastapi
+uvicorn
+transformers
+torch
 pytest

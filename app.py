@@ -22,6 +22,10 @@ LABEL_MAP = {0: "negative", 1: "positive"}
 @app.post("/predict")
 async def predict(input_data: TextInput):
     # Tokenize the input text
+
+    if input_data.text == "":
+        return JSONResponse(status_code=422, content="Empty input text")
+    
     inputs = tokenizer(input_data.text, return_tensors="pt", truncation=True, padding=True, max_length=512)
     
     # Model inference

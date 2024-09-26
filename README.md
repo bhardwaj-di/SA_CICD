@@ -37,9 +37,8 @@ https://sa-cicd.onrender.com/predict
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/fastapi-sentiment-api.git
-   cd fastapi-sentiment-api
-
+    https://github.com/bhardwaj-di/SA_CICD.git
+    
 2. Install dependencies: You can install the dependencies using pip
     ```
     pip install -r requirements.txt

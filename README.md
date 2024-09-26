@@ -1,10 +1,29 @@
-# FastAPI Sentiment Analysis API
+# ML Model as an API using GitHub Actions for CI/CD
 
 ![image](https://github.com/user-attachments/assets/ef3a1848-8ff7-4e37-bb0b-7ec24d262e28)
 
 ## Overview
 
-This project implements a **Sentiment Analysis API** using a **Transformer model** to predict the sentiment of a given statement. The model is based on the **DistilBERT** architecture, a lightweight version of BERT, fine-tuned for sentiment classification. The API is built with **FastAPI** and serves predictions as a web service, allowing easy integration into various applications. The entire application is **dockerized** and deployed on **Render**, providing a seamless experience for developers.
+Welcome to the Sentiment Analysis API! This cutting-edge project showcases the power of Continuous Integration and Continuous Deployment (CI/CD) using GitHub Actions to automate the workflow for testing, building, and deploying a state-of-the-art sentiment analysis model.
+
+At its core, this API utilizes a Transformer model specifically designed to accurately predict the sentiment of any given statement. Built on the DistilBERT architecture—an efficient and lightweight variant of BERT—this model has been fine-tuned for sentiment classification, ensuring top-notch performance.
+
+## Key Features
+
+- **State-of-the-Art Sentiment Analysis**: Leverage a powerful **DistilBERT** Transformer model for accurate sentiment classification of text, enabling you to understand the emotional tone of user statements.
+
+- **FastAPI Framework**: Built using **FastAPI**, this API offers high performance and easy integration, providing a smooth experience for developers when accessing sentiment predictions.
+
+- **Automated CI/CD**: Utilize **GitHub Actions** to implement Continuous Integration and Continuous Deployment, automating testing, building, and deployment processes for seamless updates.
+
+- **Dockerized Application**: The entire application is **dockerized**, ensuring consistent behavior across different environments and simplifying the deployment process.
+
+- **Easy Deployment on Render**: The API is deployed on **Render**, allowing for quick and hassle-free access to the sentiment analysis service without the need for complex server setups.
+
+- **User-Friendly API**: Enjoy a well-documented and easy-to-use RESTful API that makes integrating sentiment analysis capabilities into your applications straightforward.
+
+- **Scalable Solution**: Designed to handle varying loads, the API can scale to meet the demands of different applications, making it suitable for both small projects and larger enterprise solutions.
+
 
 ## Explore the API
 To explore the API and try out predictions, visit the following deployed URL:
@@ -30,13 +49,6 @@ print(response.json())
 
 ```
 Both methods will send the text as JSON to the API and return the sentiment prediction.
-
-## Features
-
-- **Predict Sentiments**: Classifies input text as "positive" or "negative".
-- **FastAPI**: Built using FastAPI, ensuring high performance and easy-to-use endpoints.
-- **Dockerized**: Fully containerized application for easy deployment and scalability.
-- **Hosted on Render**: Deployed to the cloud, making it accessible from anywhere.
 
 ## Technologies Used
 

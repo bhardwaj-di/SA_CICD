@@ -60,7 +60,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/fastapi-transformer-app:latest .
+          docker build -f DockerFile -t ${{ secrets.DOCKER_USERNAME }}/fastapi-transformer-app:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/fastapi-transformer-app:latest
 
 

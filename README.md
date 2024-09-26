@@ -1,7 +1,7 @@
 # FastAPI Sentiment Analysis API
 
 
-![FastAPI Logo](![alt text](image.png))
+![alt text](image.png)
 
 ## Overview
 
@@ -41,12 +41,15 @@ https://sa-cicd.onrender.com/predict
    cd fastapi-sentiment-api
 
 2. Install dependencies: You can install the dependencies using pip
-    ```pip install -r requirements.txt
+    ```
+    pip install -r requirements.txt
 
 ### Running Locally
-    To run the API locally, use the following command:
-    ```
+To run the API locally, use the following command:
+   ```
     uvicorn app:app --host 0.0.0.0 --port 8000
+
+```
 
 ### Using Docker
 1. Build the Docker image:
@@ -61,21 +64,22 @@ Once the API is running, you can make requests to the following endpoint:
 POST /predict
 
 Request Body:
-    ```
-    {
+   ```
+{
   "text": "I love this product!"
 }
+```
 
 Response:
-    ```
+ ```
     {
   "prediction": "positive"
 }
-
-
-### Deployed API
-You can access the deployed API at: Your Render App URL
+```
 
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or want to add new features, feel free to fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.

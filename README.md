@@ -1,7 +1,6 @@
 # FastAPI Sentiment Analysis API
 
-
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/ef3a1848-8ff7-4e37-bb0b-7ec24d262e28)
 
 ## Overview
 
@@ -10,6 +9,27 @@ This project implements a **Sentiment Analysis API** using a **Transformer model
 ## Explore the API
 To explore the API and try out predictions, visit the following deployed URL:
 https://sa-cicd.onrender.com/predict
+
+## Using curl in the terminal:
+```
+curl -X POST "https://sa-cicd.onrender.com/predict" \
+-H "Content-Type: application/json" \
+-d '{"text": "I love this product!"}'
+
+```
+
+## Using Python (with requests library):
+```
+import requests
+
+url = "https://sa-cicd.onrender.com/predict"
+data = {"text": "I love this product!"}
+response = requests.post(url, json=data)
+
+print(response.json())
+
+```
+Both methods will send the text as JSON to the API and return the sentiment prediction.
 
 ## Features
 
@@ -37,7 +57,7 @@ https://sa-cicd.onrender.com/predict
 
 1. **Clone the repository**:
    ```bash
-    https://github.com/bhardwaj-di/SA_CICD.git
+   git clone https://github.com/bhardwaj-di/SA_CICD.git
     
 2. Install dependencies: You can install the dependencies using pip
     ```
